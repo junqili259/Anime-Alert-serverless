@@ -1,5 +1,5 @@
-# Anime-Alert
-This app displays all shows of the current season. The selected show is added to your watchlist and notifications will be sent whenever a new episode is released.
+# Anime-Alert-api
+This api returns the required data such as every show in the current seasonal slot back to the Anime-Alert application.
 
 
 ## Run API locally
