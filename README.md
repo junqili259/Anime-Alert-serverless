@@ -27,4 +27,5 @@ docker run -d --name mycontainer -p 80:80 myimage
 Open your browser to http://http://127.0.0.1:8000/docs while running the api
 
 ### Tools
-[Fastapi](https://github.com/tiangolo/fastapi)
+[Fastapi](https://github.com/tiangolo/fastapi)<br>
+[Anilist](https://anilist.gitbook.io/anilist-apiv2-docs/)
