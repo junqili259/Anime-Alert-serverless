@@ -40,5 +40,4 @@ async def getShow(request, path=""):
     except requests.exceptions.InvalidURL as urlerr:
         print("Invalid Url error", urlerr)
 
-    #return json(response.json())
-    return response.json()
+    return json(response.json())
