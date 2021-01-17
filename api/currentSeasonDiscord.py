@@ -53,7 +53,6 @@ async def index(request, path=""):
                     romaji
                     english
                 }
-                episodes
                 status
                 nextAiringEpisode {
                     airingAt
