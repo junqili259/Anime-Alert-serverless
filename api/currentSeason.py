@@ -73,7 +73,7 @@ async def index(request, path=""):
         "season": season_now,
         "seasonYear": year,
         "page": 1,
-        "isAdult": false,
+        "isAdult": False,
     }
 
 
