@@ -38,7 +38,7 @@ async def index(request, path=""):
     if month == "Dec":
         year = year + 1
 
-    query = """query($season: MediaSeason, $seasonYear: Int, $page: Int) {
+    query = """query($season: MediaSeason, $seasonYear: Int, $page: Int, $isAdult: Boolean) {
         Page(page: $page) {
             pageInfo {
                 total
@@ -47,7 +47,7 @@ async def index(request, path=""):
                 lastPage
                 hasNextPage
             }
-            media(season: $season, seasonYear: $seasonYear, type: ANIME){
+            media(season: $season, seasonYear: $seasonYear, type: ANIME, isAdult: $isAdult){
                 id
                 title {
                     romaji
@@ -72,7 +72,8 @@ async def index(request, path=""):
     variables = {
         "season": season_now,
         "seasonYear": year,
-        "page": 1
+        "page": 1,
+        "isAdult": False,
     }
 
 
