@@ -2,7 +2,7 @@ from sanic import Sanic
 from sanic.response import json
 from datetime import datetime
 import requests
-app = Sanic()
+app = Sanic("App")
 
 
 @app.route('/')
