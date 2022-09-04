@@ -2,7 +2,7 @@ from sanic import Sanic
 from sanic.response import json
 import requests
 
-app = Sanic()
+app = Sanic("App")
 
 @app.route('/')
 @app.route('/<path:path>')
